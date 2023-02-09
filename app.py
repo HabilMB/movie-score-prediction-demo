@@ -52,4 +52,5 @@ def prediction():
     return render_template("prediction.html", prediction ="{:.1f}".format(final_pred), verdict = verdict)
 
 if __name__ == '__main__':
-    app.run(port=3000, debug=True)
+    #app.run(port=3000, debug=True)
+    app.run(host="0.0.0.0", port=5000) 
