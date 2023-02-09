@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Review Prediction</div>
+            <div class="content">
+                <div class="options"> 
+                        <a style="text-decoration: none" href="{{ url_for('predict') }}">
+                            <div class="navbutton">Predict A Movie!</div>
+                        </a>
+                        <a style="text-decoration: none" href="{{ url_for('howtouse') }}">
+                            <div class="navbutton">How to use</div>
+                        </a>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

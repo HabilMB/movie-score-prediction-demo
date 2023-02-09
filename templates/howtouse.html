@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="howtouse">
+        <h3>HOWTOUSE</h3>
+        <div class="image-display">
+            <figure>
+                <img src="{{ url_for('static', filename='assets/fillform.png')}}" style="width:100%; padding-top:0;"> 
+                <figcaption>Fill out the forms based on it's description</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='assets/predict.png')}}" style="width:100%; padding-top:12px; padding-bottom:12px;"> 
+                <figcaption>Predicted score will appear, you can click "Predict Another Movie" to do it again</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='assets/fillagain.png')}}" style="width:100%; padding-top:12px; padding-bottom:12px;"> 
+                <figcaption>After clicking the "Predict Another Movie" button, the form will appear for you to predict another movie!</figcaption>
+            </figure>
+        </div>
+        <a style="text-decoration: none" href="{{ url_for('predict') }}" class="btn btn-primary">
+            <div class="predictbutton">Start Predicting A Movie!</div>
+        </a>
+    </div>
+    
+</body>
+

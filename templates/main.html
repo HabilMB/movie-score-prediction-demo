@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Review Prediction</div>
+            <div class="content">
+                <form action='/predict', method="post", enctype="multiport/form-data">
+                    <div class="input-details">
+                        <div class="input-box">
+                            <span class="details">Movie Title</span>
+                            <input type="text" name='title' placeholder="Enter a movie name" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Genre</span>
+                            <input type="text" name='genres' placeholder="Enter a Genre" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Summary</span>
+                            <input type="text"  name='overview' placeholder="Enter a Summary" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Production Company</span>
+                            <input type="text" name='production_companies' placeholder="Enter a Production Company" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Production Country</span>
+                            <input type="text" name='production_countries' placeholder="Enter a Production Country" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Launguage</span>
+                            <input type="text" name='spoken_languages' placeholder="Enter the Launguage" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Tagline</span>
+                            <input type="text" name='tagline' placeholder="Enter a Tagline">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Actors</span>
+                            <input type="text" name='actors' placeholder="Enter Actors" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Runtime(In Minutes)</span>
+                            <input type="text" name='runtime' placeholder="Movie Runtime" required="required">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Budget(In USD)</span>
+                            <input type="text" name='budget' placeholder="Movie Budget" required="required">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Predict">
+                    </div>
+                </form>
+            </div>  
+            {{prediction}}
+        </div>
+    </body>
+</html>

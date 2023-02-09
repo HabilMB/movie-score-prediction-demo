@@ -1,0 +1,17 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="user-details">
+        <div class="prediction-container">
+            <h3 style="margin-bottom: 8px;">PREDICTION</h3>
+            <p >The Predicted User Average Score is</p>
+            <p style="font-size:128;">{{prediction}}</p>
+            <p style="font-weight: 600; margin-bottom: 16px;">{{verdict}}</p>
+            <a style="text-decoration: none" href="{{ url_for('predict') }}">
+            <div class="backbutton">Predict Another Movie</div>
+            </a>
+        </div>
+    </div>
+
+</body>
