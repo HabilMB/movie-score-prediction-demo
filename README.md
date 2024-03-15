@@ -2,7 +2,7 @@
 
 ## This is a project to demonstrate a model made for predicting movie scores based on movie features
 
-how the model was created : github.com/HabilMB/movie-score-prediction-model
+how the model was created : [github.com/HabilMB/movie-score-prediction-model](https://github.com/HabilMB/movie-score-prediction-model)
 
 run on terminal to install requirements
 - pip install -r requirements.txt
